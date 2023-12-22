@@ -4,6 +4,7 @@ import { AddressForm } from "./AddressForm"
 import { useMultistepForm } from "./useMultistepForm"
 import { UserForm } from "./UserForm"
 
+
 type FormData = {
   firstName: string
   lastName: string
@@ -49,7 +50,7 @@ function App() {
   }
 
   return (
-    <div
+    <div className="bg-blue-500 md:bg-green-500"
       style={{
         position: "relative",
         background: "white",
@@ -59,9 +60,10 @@ function App() {
         borderRadius: ".5rem",
         fontFamily: "Arial",
         maxWidth: "max-content",
+        
       }}
     >
-      <form onSubmit={onSubmit}>
+      <form onSubmit={onSubmit} >
         <div style={{ position: "absolute", top: ".5rem", right: ".5rem" }}>
           {currentStepIndex + 1} / {steps.length}
         </div>
@@ -71,7 +73,7 @@ function App() {
             marginTop: "1rem",
             display: "flex",
             gap: ".5rem",
-            justifyContent: "flex-end",
+            justifyContent: "center",
           }}
         >
           {!isFirstStep && (
