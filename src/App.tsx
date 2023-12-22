@@ -52,14 +52,17 @@ function App() {
   return (
     <div className="bg-blue-500 md:bg-green-500"
       style={{
+        marginTop: "10%",
+        marginLeft: "35%",
         position: "relative",
         background: "white",
-        border: "1px solid black",
+        border: "5px solid black",
         padding: "2rem",
         margin: "1rem",
         borderRadius: ".5rem",
         fontFamily: "Arial",
         maxWidth: "max-content",
+        backgroundColor: "grey"
         
       }}
     >
